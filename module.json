@@ -1,0 +1,15 @@
+{
+  "id": "koha-socket-damage",
+  "title": "One click damage via socket",
+  "description": "A simple module created as a demo for working in the Foundry Virtual Tabletop framework.",
+  "authors": [
+    {
+    "name": "el_koha"
+    }
+  ],
+  "version": "0.0.0.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  }
+}
