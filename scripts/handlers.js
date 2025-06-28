@@ -5,7 +5,7 @@ let socket;
 Hooks.once("socketlib.ready", () => {
     socket = socketlib.registerModule("my-module");
     socket.register("hello", showHelloMessage);
-    socket.register("add", add);
+    socket.register("doDamage", doDamage);
 });
 
 // Hooks.once("ready", async () => {
