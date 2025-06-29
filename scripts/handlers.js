@@ -9,9 +9,17 @@ Hooks.once("ready", async () => {
     game.modules.get("koha-socket-damage").sckt=socket
 });
 
-function doDamage(source, target, damage) {
+function doDamage(sourceID, targetID, damage) {
+    let source = canvas.tokens.get(sourceID);
+    let target = canvas.tokens.get(targetID);
+
     ChatMessage.create({
-        content: `${source} pizdanul po ${target} na ${damage}`,
+        content: `${source.document.name} pizdanul po ${target.document.name} na ${damage}`,
+    });
+
+    let resultTargetHP = target.actor.system.props.HP - damage;
+    ChatMessage.create({
+        content: `HP ${target.document.name} bilo ${target.actor.system.props.HP}, stanet ${resultTargetHP}`,
     });
     return true;
 }
