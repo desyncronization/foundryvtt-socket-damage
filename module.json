@@ -1,19 +1,20 @@
 {
-  "id": "koha-socket-damage",
-  "title": "One click damage via socket",
-  "description": "A simple module created as a demo for working in the Foundry Virtual Tabletop framework.",
-  "scripts": ["scripts/handlers.js"],
-  "socket":true,
-  "authors": [
-      {
-          "name": "el_koha"
-      }
-  ],
-  "version": "0.0.0.1",
-  "compatibility": {
-      "minimum": "12",
-      "verified": "12"
-  },
-  "url": "https://github.com/desyncronization/foundryvtt-socket-damage",
-  "download": "https://codeload.github.com/desyncronization/foundryvtt-socket-damage/zip/refs/tags/v0.01"
+    "id": "koha-socket-damage",
+    "title": "One click damage via socket",
+    "description": "A simple module created as a demo for working in the Foundry Virtual Tabletop framework.",
+    "scripts": ["scripts/handlers.js"],
+    "socket": true,
+    "authors": [
+        {
+            "name": "el_koha"
+        }
+    ],
+    "version": "0.0.0.1",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    },
+    "url": "https://github.com/desyncronization/foundryvtt-socket-damage",
+    "manifest": "https://raw.githubusercontent.com/desyncronization/foundryvtt-socket-damage/refs/heads/main/module.json",
+    "download": "https://codeload.github.com/desyncronization/foundryvtt-socket-damage/zip/refs/tags/v0.01"
 }
