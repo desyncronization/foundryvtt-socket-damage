@@ -6,14 +6,8 @@ Hooks.once("socketlib.ready", () => {
 });
 
 Hooks.once("ready", async () => {
-    game.modules.get("koha-socket-damage").api=macroApi
+    game.modules.get("koha-socket-damage").sckt=socket
 });
-
-
-async function sendDamageRequest(source,target,damage){
-    const result = await socket.executeAsGM("doDamage", 'tipa_damager', 'tipa_target', 100500);
-    console.log(`GM response: ${result}`);
-}
 
 function doDamage(source, target, damage) {
     ChatMessage.create({
@@ -22,15 +16,4 @@ function doDamage(source, target, damage) {
     return true;
 }
 
-const macroApi = {
-    sendDamageRequest: async(source, target, damage) => {
-        const result = await socket.executeAsGM(
-            "doDamage",
-            "tipa_damager",
-            "tipa_target",
-            100500
-        );
-        console.log(`GM response: ${result}`);
-    }
-};
 
