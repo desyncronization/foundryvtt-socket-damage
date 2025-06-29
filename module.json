@@ -3,6 +3,7 @@
   "title": "One click damage via socket",
   "description": "A simple module created as a demo for working in the Foundry Virtual Tabletop framework.",
   "scripts": ["scripts/handlers.js"],
+  "socket":true,
   "authors": [
       {
           "name": "el_koha"
