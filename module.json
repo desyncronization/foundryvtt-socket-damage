@@ -9,12 +9,12 @@
             "name": "el_koha"
         }
     ],
-    "version": "0.0.0.4",
+    "version": "0.0.0.5",
     "compatibility": {
         "minimum": "12",
         "verified": "12"
     },
     "url": "https://github.com/desyncronization/foundryvtt-socket-damage",
     "manifest": "https://raw.githubusercontent.com/desyncronization/foundryvtt-socket-damage/refs/heads/main/module.json",
-    "download": "https://codeload.github.com/desyncronization/foundryvtt-socket-damage/zip/refs/tags/v0.02"
+    "download": "https://codeload.github.com/desyncronization/foundryvtt-socket-damage/zip/refs/tags/v0.03"
 }
