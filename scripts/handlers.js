@@ -14,14 +14,14 @@ function doDamage(targetID, targetBodyPart, damage) {
     let target = canvas.tokens.get(targetID);
 
     let resultTargetHP = target.actor.system.props[targetBodyPart] - damage;
-    target.actor.update({ targetBodyPart: resultTargetHP });
+    target.actor.update({ [targetBodyPart]: resultTargetHP });
 
     return true;
 }
 
 function setHP(targetID, targetBodyPart, finalHP) {
     let target = canvas.tokens.get(targetID);
-    target.actor.update({ targetBodyPart: finalHP });
+    target.actor.update({ [targetBodyPart]: finalHP });
     return true;
 }
 
