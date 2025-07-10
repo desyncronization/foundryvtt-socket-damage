@@ -10,23 +10,18 @@ Hooks.once("ready", async () => {
     game.modules.get("koha-socket-damage").sckt=socket
 });
 
-function doDamage(sourceID='zaloopa', targetID, targetBodyPart, damage) {
+function doDamage(targetID, targetBodyPart, damage) {
     let target = canvas.tokens.get(targetID);
 
     let resultTargetHP = target.actor.system.props[targetBodyPart] - damage;
-
-    let propToUpdate = "system." + targetBodyPart;
-    target.actor.update({ propToUpdate: resultTargetHP });
+    target.actor.update({ targetBodyPart: resultTargetHP });
 
     return true;
 }
 
 function setHP(targetID, targetBodyPart, finalHP) {
     let target = canvas.tokens.get(targetID);
-
-    let propToUpdate = "system." + targetBodyPart;
-    target.actor.update({ propToUpdate: finalHP });
-
+    target.actor.update({ targetBodyPart: finalHP });
     return true;
 }
 
